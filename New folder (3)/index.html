@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="a1">hide</p>
+    <p class="a">show</p>
+    
+
+    <p class="a3">toggle</p>
+    <P class="h1">fadin</P>
+    <p class="dd" style="text-align: center; background-color: aqua;" >hallo world</p>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('.a1').click(function(){
+            $('.dd').hide(3000)
+
+        })
+            })
+            
+        $('.a').dblclick(function(){
+            $('.dd').show(3000)
+
+        })
+            
+           
+        $('.a3').mouseenter(function(){
+            $('.dd').toggle(3000)
+
+        })
+            
+        $('.h1').mouseleave(function(){
+            $('.dd').fadeIn(3000)
+
+        })
+                 
+    </script>
+
+
+    
+    
+</body>
+</html>
